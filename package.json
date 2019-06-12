@@ -1,5 +1,5 @@
 {
-  "name": "{-- project-name --}",
+  "name": "projectname",
   "version": "1.0.0",
   "description": "CRASSA with Material-UI",
   "main": "index.js",
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "crassa": {
-    "displayName": "{-- project-name --}",
+    "displayName": "projectname",
     "aliases": {
       "utils": "./src/utils",
       "lib": "./src/lib",
@@ -30,52 +30,49 @@
     }
   },
   "_moduleAliases": {
-    "utils": "./src/utils",
+    "assets": "./src/assets",
+    "components": "./src/components",
+    "containers": "./src/containers",
     "lib": "./src/lib",
     "reducers": "./src/reducers",
     "sagas": "./src/sagas",
-    "components": "./src/components",
-    "containers": "./src/containers",
-    "api": "./src/api",
-    "assets": "./src/assets"
+    "utils": "./src/utils"
   },
   "jest": {
     "moduleNameMapper": {
-      "utils": "<rootDir>/src/utils",
+      "assets": "<rootDir>/src/assets",
+      "components": "<rootDir>/src/components",
+      "containers": "<rootDir>/src/containers",
       "lib": "<rootDir>/src/lib",
       "reducers": "<rootDir>/src/reducers",
       "sagas": "<rootDir>/src/sagas",
-      "components": "<rootDir>/src/components",
-      "containers": "<rootDir>/src/containers",
-      "api": "<rootDir>/src/api",
-      "assets": "<rootDir>/src/assets"
+      "utils": "<rootDir>/src/utils"
     }
   },
   "dependencies": {
     "@loadable/component": "5.10.1",
-    "@material-ui/core": "4.1.0",
-    "@material-ui/icons": "4.1.0",
+    "antd": "3.19.3",
     "axios": "0.19.0",
     "axios-debug-log": "0.6.1",
     "connected-react-router": "6.4.0",
-    "crassa": "{-- project-version --}",
+    "crassa": "0.7.7",
     "extensible-duck": "1.5.0",
     "js-cookie": "2.2.0",
-    "mysql": "2.17.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
     "react-hot-loader": "4.11.0",
-    "react-jss": "8.6.1",
     "react-redux": "7.1.0",
     "react-router-dom": "5.0.1",
     "react-router-redux": "5.0.0-alpha.9",
     "redux": "4.0.1",
     "redux-logger": "3.0.6",
     "redux-saga": "1.0.3",
-    "redux-wait-for-action": "0.0.8"
+    "redux-wait-for-action": "0.0.8",
+    "styled-components": "4.3.1"
   },
   "devDependencies": {
+    "babel-plugin-import": "1.12.0",
     "eslint-plugin-sort-keys-fix": "1.0.1",
     "gh-pages": "2.0.1",
     "redux-devtools": "3.5.0",
