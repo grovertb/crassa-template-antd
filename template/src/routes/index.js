@@ -9,6 +9,7 @@ const Dashboard = loadable(() => import('../containers/Dashboard'), {
   fallback: <Loading />
 })
 
+/* webpackPrefetch: true */
 const Home = loadable(() => import('../containers/Home'), {
   fallback: <Loading />
 })
