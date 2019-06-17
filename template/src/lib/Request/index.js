@@ -28,9 +28,10 @@ export class Request {
   http = function() {
     _source = axios.CancelToken.source()
     let url = typeof window === 'undefined' ? this.url : this.url || window.location.origin
+    const version = process.env.REACT_APP_API_VERSION || 'v1'
 
     let instance = axios.create({
-      baseURL    : `${url}/api/${process.env.REACT_APP_API_VERSION}/`,
+      baseURL    : `${url}/api/${version}/`,
       cancelToken: _source.token,
       mode       : 'no-cors'
     // withCredentials: true
