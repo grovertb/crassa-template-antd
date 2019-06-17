@@ -4,13 +4,13 @@
   "description": "CRASSA with Material-UI",
   "main": "index.js",
   "scripts": {
-    "start": "crassa start",
     "build": "crassa build",
+    "count": "crassa count-lines",
+    "deploy": "gh-pages -b gh-pages -d build",
     "dev": "crassa dev",
     "lint": "crassa lint",
-    "count": "crassa count-lines",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build"
+    "start": "crassa start"
   },
   "keywords": [],
   "author": "",
@@ -63,7 +63,6 @@
   "devDependencies": {
     "babel-plugin-import": "1.12.0",
     "eslint-plugin-sort-keys-fix": "1.0.1",
-    "gh-pages": "2.0.1",
     "less-loader": "5.0.0",
     "redux-devtools": "3.5.0",
     "redux-devtools-dock-monitor": "1.1.3",
