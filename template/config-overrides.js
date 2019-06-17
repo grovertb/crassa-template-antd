@@ -1,14 +1,6 @@
-const { override, fixBabelImports, addLessLoader, addWebpackAlias } = require('customize-cra')
-const { _moduleAliases } = require('./package.json')
-
-const aliases = {}
-
-Object.keys(_moduleAliases).forEach(key => {
-  aliases[key] = _moduleAliases[key].replace('.', __dirname)
-})
+const { override, fixBabelImports, addLessLoader } = require('customize-cra')
 
 module.exports = override(
-  addWebpackAlias({ ...aliases }),
   fixBabelImports('import', {
     libraryDirectory: 'es',
     libraryName     : 'antd',
