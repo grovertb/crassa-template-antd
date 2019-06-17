@@ -1,4 +1,5 @@
 import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 
 import store, { history } from './store/configureStore'
 import createRoutes from './routes'
@@ -11,4 +12,10 @@ if(process.env.NODE_ENV === 'test') {
 
 const routes = createRoutes(history)
 
-export default () => <Root store={store}>{routes}</Root>
+const GlobalStyle = createGlobalStyle({
+  body: {
+    backgroundColor: 'rgb(239, 239, 239)'
+  }
+})
+
+export default () => <Root store={store}><GlobalStyle />{routes}</Root>

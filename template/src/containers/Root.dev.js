@@ -9,12 +9,12 @@ class Root extends Component {
     const { store, children } = this.props
 
     return (
-        <Provider store={store}>
-          <Fragment>
-            {children}
-            <DevTools />
-          </Fragment>
-        </Provider>
+      <Provider store={store}>
+        <Fragment>
+          {children}
+          <DevTools />
+        </Fragment>
+      </Provider>
     )
   }
 }
