@@ -56,6 +56,7 @@ export class Request {
         .catch(e => {
           reject({ type: axios.isCancel(e) ? 'cancel' : 'err', ...e })
         })
+        .finally(()=> beforeRoute = null)
     })
   }
 
@@ -68,6 +69,7 @@ export class Request {
         .catch(e => {
           reject({ type: axios.isCancel(e) ? 'cancel' : 'err', ...e })
         })
+        .finally(()=> beforeRoute = null)
     })
   }
 
@@ -80,6 +82,7 @@ export class Request {
         .catch(e => {
           reject({ type: axios.isCancel(e) ? 'cancel' : 'err', ...e })
         })
+        .finally(()=> beforeRoute = null)
     })
   }
 
@@ -92,6 +95,7 @@ export class Request {
         .catch(e => {
           reject({ type: axios.isCancel(e) ? 'cancel' : 'err', ...e })
         })
+        .finally(()=> beforeRoute = null)
     })
   }
 
@@ -102,12 +106,11 @@ export class Request {
         .get(route, {
           params: payload
         })
-        .then(res => {
-          resolve(res.data)
-        })
+        .then(res => resolve(res.data))
         .catch(e => {
           reject({ type: axios.isCancel(e) ? 'cancel' : 'err', ...e })
         })
+        .finally(()=> beforeRoute = null)
     })
   }
 
