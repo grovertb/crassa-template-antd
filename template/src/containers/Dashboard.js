@@ -4,7 +4,6 @@ class Dashboard extends Component {
   render() {
     return (
       <Fragment>
-        <div>crassa-antd</div>
         {this.props.children}
       </Fragment>
     )

@@ -14,7 +14,7 @@ const routes = createRoutes(history)
 
 const GlobalStyle = createGlobalStyle({
   body: {
-    backgroundColor: 'rgb(239, 239, 239)'
+    backgroundColor: 'rgb(239, 239, 239) !important'
   }
 })
 
