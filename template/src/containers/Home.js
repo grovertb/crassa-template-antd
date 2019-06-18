@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { Button } from 'antd'
 
 import productsDucks from 'reducers/products'
+import Header from 'components/Common/Header'
 
 class Home extends Component {
   render() {
@@ -15,7 +16,9 @@ class Home extends Component {
 
     return (
       <Fragment>
-        <h1>Products List</h1>
+        <Header>
+          <h1>Products List</h1>
+        </Header>
         <Button onClick={this._handleClickGetProducts}>Get Products</Button>
         <ul>
           {
