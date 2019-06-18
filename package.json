@@ -9,7 +9,9 @@
     "deploy": "gh-pages -b gh-pages -d build",
     "dev": "crassa dev",
     "lint": "crassa lint",
+    "lint-staged": "lint-staged",
     "predeploy": "npm run build",
+    "prod":"yarn build && yarn start",
     "start": "crassa start"
   },
   "keywords": [],
