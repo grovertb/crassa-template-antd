@@ -6,8 +6,9 @@ module.exports = override(
     libraryName     : 'antd',
     style           : true
   }),
-  addLessLoader({
-    javascriptEnabled: true,
-    modifyVars       : { '@primary-color': '#1DA57A' }
-  }),
+  process.env.NODE_ENV === 'production' &&
+    addLessLoader({
+      javascriptEnabled: true,
+      modifyVars       : { '@primary-color': '#1DA57A' }
+    })
 )

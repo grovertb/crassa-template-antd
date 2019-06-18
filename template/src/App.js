@@ -8,6 +8,8 @@ import Root from './containers/Root'
 if(process.env.NODE_ENV === 'test') {
   const { whyDidYouUpdate } = require('why-did-you-update')
   whyDidYouUpdate(React)
+} else if(process.env.NODE_ENV === 'development') {
+  require('antd/dist/antd.css')
 }
 
 const routes = createRoutes(history)
