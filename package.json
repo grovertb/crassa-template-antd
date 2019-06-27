@@ -1,5 +1,5 @@
 {
-  "name": "projectname",
+  "name": "{-- project-name --}",
   "version": "1.0.0",
   "description": "CRASSA with Material-UI",
   "main": "index.js",
@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "crassa": {
-    "displayName": "projectname"
+    "displayName": "{-- project-name --}"
   },
   "_moduleAliases": {
     "assets": "./src/assets",
