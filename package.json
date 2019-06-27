@@ -12,7 +12,8 @@
     "lint-staged": "lint-staged",
     "predeploy": "npm run build",
     "prod":"yarn build && yarn start",
-    "start": "crassa start"
+    "start": "crassa start",
+    "start:dev": "crassa start-dev"
   },
   "keywords": [],
   "author": "",

@@ -34,7 +34,7 @@ export class Request {
       baseURL    : `${url}/api/${version}/`,
       cancelToken: _source.token,
       mode       : 'no-cors'
-    // withCredentials: true
+    // withCredentials: true // habilitar si necesita de credenciales
     })
 
     if(this.token || (typeof window !== 'undefined' && localStorage.getItem('auth_token')))
