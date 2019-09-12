@@ -42,14 +42,13 @@
     }
   },
   "dependencies": {
+    "@crassa/next": "grovertb/crassa#next",
     "@hot-loader/react-dom": "16.8.6",
     "antd": "3.19.3",
     "axios": "0.19.0",
     "axios-debug-log": "0.6.1",
     "connected-react-router": "6.4.0",
-    "crassa": "git+https://github.com/grovertb/crassa.git",
     "extensible-duck": "1.5.0",
-    "js-cookie": "2.2.0",
     "less": "3.9.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
