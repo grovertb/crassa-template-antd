@@ -2,16 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import { loadableReady } from '@loadable/component'
-// import registerServiceWorker from './registerServiceWorker'
+import { HelmetProvider } from 'react-helmet-async'
 import App from './App'
 
 if(module.hot) module.hot.accept()
 
 const render = (Component, type = 'render') => {
   ReactDOM[type](
-    <AppContainer key={Math.random()}>
-      <Component />
-    </AppContainer>,
+    <HelmetProvider>
+      <AppContainer key={Math.random()}>
+        <Component />
+      </AppContainer>
+    </HelmetProvider>,
     document.getElementById('root')
   )
 }
